@@ -1,0 +1,34 @@
+{
+  "name": "tryrpa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://gitlab.com/JingChhun/rpa-xlsx-to-docx.git"
+  },
+  "author": "Chhun",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "docx": "^4.6.0",
+    "docx-templates": "^2.9.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-zip": "^2.0.1",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "mammoth": "^1.4.7",
+    "multer": "^1.4.1",
+    "particles.js": "^2.0.0",
+    "read-excel-file": "^2.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
