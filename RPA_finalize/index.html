@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple UPload Example</title>
+        <style>
+        .header{
+            size: 10px;
+            color: darkcyan;
+            font-family: elephant;
+            text-align: center;
+        }
+
+        .first{
+            size: 10px;
+        }
+
+        .second{
+            size: 10px;
+        }
+
+    	.load{
+            size: 10px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <dev class="header">
+            <h1>Fill Form</h1>
+            <h1>Excel to Ms.Word</h1>
+        </dev>
+        <dev class="first">
+            <form action="/excel" enctype="multipart/form-data" method="POST">
+                Select Excel File: <input type="file" name="upload1" multiple>
+                <br/>
+                Template Selection :<input type="file" name="upload2" multiple>
+                <br/>
+                <input type="submit" value="Upload">
+            </form>
+        </dev>
+        <br/>
+        <!-- <dev class="second">
+            <form action="/template" enctype="multipart/form-data" method="POST">
+                Select Template: <input type="file" name="upload" multiple>
+                <input type="submit" value="Upload">
+            </form>
+        </dev> -->
+        <br/>
+        <dev class="load">
+            <form action="/convert" method="POST">
+                <input type="submit" value="Convert" >
+            </form>
+        </dev>
+        <br/>
+        <dev>
+            <form action="/download" method="POST">
+                <input type="submit" value="Download" >
+            </form>
+        </dev>
+        <!-- <dev>
+            <form action="/download" method="POST">
+                <button id="download-btn" data-files="D:\MyRPA\outputs\Kimchhun.docx D:\MyRPA\outputs\Lynan.docx">Download1</button>
+                <script src="browser.js"></script>
+                <script>
+                document.querySelector('download-btn').addEventListener('click', function(e)
+        {
+        var files = e.target.dataset.files.split(' ');
+        multiDownload(files);
+        });
+
+            </form>
+        </dev> -->
+    </body>
+</html>
