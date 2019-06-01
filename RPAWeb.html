@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Xlsx To Docx</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="title" class="grid">
+        <div class="bg-image"></div>
+        <div class="content-header">
+            <h1>Filling Form</h1>
+            <h3>Xlsx To Docx</h3>
+        </div>
+    </header>
+
+    <!-- Main Area -->
+    <main id="main">
+
+        <div class="intro">
+            Click here for : <a href="IntroductionRPA.pdf" target="_blank">Introduction</a>
+        </div>
+
+        <form action="RPADownloadpage.html">
+        <!--Word-->
+        <section id="word" class="grid">
+            <div class="docx">
+                <img src="images/docx_icon.svg.png" alt="Ms.Word">
+            </div>
+            <div class="docx">
+                <h2 class="content-word">Choose Your Word Document</h2>
+                <p> Please, refer the Introduction pdf in the above link to make sure that your Word Document is follow the regulation.
+                    If your Word Document is not follow the regulation correctly the process will not work. 
+                </p>
+                <br>
+                <input type="file" name="template_file" multiple>
+            </div>
+        </section>
+
+        <!-- Excel -->
+        <section id="excel" class="grid">
+            <div class="xlsx">
+                <h2 class="content-excel">Choose Your Excel File</h2>
+                <p>Please, refer the Introduction pdf in the above link to make sure that your Excel File is follow the regulation.
+                    If your Excel File is not follow the regulation correctly the process will not work.
+                </p>
+                <br>
+                <input type="file" name="data_file" multiple>
+            </div>
+            <div class="xlsx">
+                <img src="images/xlsx_icon.svg.png" alt="Ms.Excel">
+            </div>
+        </section>
+
+        <!-- Convert -->
+        <section id="button-convert" class="grid">
+            <div class="btn">
+                <input type="submit" value="Convert" />
+            </div>
+        </section>
+        </form>
+    </main>
+
+    <!--Footer-->
+    <footer id="main-footer" class="grid" >
+        <div>RPA Process</div>
+        <div>Filling Form</div>
+        <!-- <div>Project By <a href="https://www.odoo.com"><b>odoo.com</b></a></div> -->
+    </footer>
+</body>
+</html>

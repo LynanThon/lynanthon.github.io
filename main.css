@@ -1,0 +1,277 @@
+/* Core Style */
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: url('images/bg.jpg');
+    color: #fff;
+    background-size: cover;
+    line-height: 1.5;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+/*Introduction*/
+.intro {
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Header */
+
+#title {
+    min-height: 450px;
+    color: #000;
+    text-align: center;
+    /* background-color: hsla(240, 100%, 25%, 0.1); */
+}
+
+/* #title .bg-image {
+    position: absolute;
+    background: url('images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+} */
+
+#title .h1 {
+    padding-bottom: 0px;
+}
+
+#title .content-header {
+    padding: 2em 1.5em;
+    font-size: 40px;
+} 
+
+#title .content-header h3 {
+    padding-top: 0;
+}
+
+/* Word */
+
+#word .docx {
+    padding: 5em;
+}
+
+#word .docx:last-child {
+    font-size: 25px;
+    color: #000;
+    padding: 5em 2em;
+    text-align: left;
+    /* background-color: hsla(240, 100%, 25%, 0.1); */
+}
+
+#word .docx .content-word {
+    font-size: 32px;
+}
+
+input[type=file] {
+    width: 70%;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #000066;
+    font-size: 27px;
+    border-radius: 12px;
+    color: #000033;
+}
+
+/* Button Choose File*/
+::-webkit-file-upload-button {
+    border: none;
+    background: #000066;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Excel */
+
+#excel .xlsx {
+    padding: 5em;
+}
+
+#excel .xlsx:first-child {
+    /* background-color: hsla(240, 100%, 25%, 0.1); */
+    font-size: 25px;
+    padding: 5em 2em;
+    padding-left: 5em;
+    color: #000;
+    text-align: left;
+}
+
+#excel .xlsx .content-excel {
+    font-size: 32px;
+}
+
+/* Convert */
+
+input[type=submit] {
+    display: inline-block;
+    background: #000066;
+    color: #fff;
+    padding: .5em 2em;
+    margin: 2em 0 3.5em 0;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=submit]:hover {
+    background-color: #00004d;
+}
+
+/* Footer */
+
+#main-footer {
+    padding: 2em;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* #main-footer a {
+    color: #5b2c6f;
+    text-decoration: none;
+} */
+
+/*Download Page*/
+/*Download Header*/
+
+#d-header .d-content {
+    color: #000;
+    padding-top: 200px;
+}
+
+/* .d-content{
+    padding-top: 5em;
+} */
+
+.d-content h1 {
+    font-size: 45px;
+    padding-bottom: 50px;
+}
+
+.d-content h2 {
+    font-size: 30px;
+}
+
+/*Download Main*/
+
+#d-sec .d-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000066;
+    border: none;
+    font-size: 30px;
+    padding: .5em 1em;
+    margin: 2em 0 3em 0;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+#d-sec .d-btn:hover {
+    background-color: #00004d;
+}
+
+.d-grids {
+    padding-bottom: 9em;
+}
+
+/*Download Footer*/
+
+/* #d-main-footer {
+    padding: 2em;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+#d-main-footer a {
+    color: #5b2c6f;
+    text-decoration: none;
+} */
+
+/* Media Queries */
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #word .content-word {
+        /* columns: 2; */
+        column-gap: 2em;
+    }
+
+    #word .content-word p{
+        padding-top: 0;
+    }
+
+    #word img, #excel img {
+        width: 100%;
+        padding-top: 2em;
+    }
+
+    .docx, .xlsx, #main-footer div {
+        grid-column: span 2;
+    }
+
+    #title .content-header {
+        grid-column: span 4;
+    }
+
+    #button-convert .btn {
+        grid-column: span 4;
+    }
+
+    /*Download Page*/
+    .d-grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #d-header .d-content {
+        grid-column: span 4;
+    }
+
+    #d-sec .d-btn {
+        grid-column: span 4;
+    }
+}
+
+@media(min-width: 1500px) {
+    #word img, #excel img {
+        width: 60%;
+        padding: 0;
+    }
+}
+
+@media(max-width: 700px) {
+    #excel .xlsx:first-child {
+        padding-left: 2em;
+    }
+}
