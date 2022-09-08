@@ -23,7 +23,7 @@
     "express-zip": "^2.0.1",
     "formidable": "^1.2.1",
     "fs": "0.0.1-security",
-    "mammoth": "^1.4.7",
+    "mammoth": "^1.5.1",
     "multer": "^1.4.1",
     "particles.js": "^2.0.0",
     "read-excel-file": "^2.0.7"
