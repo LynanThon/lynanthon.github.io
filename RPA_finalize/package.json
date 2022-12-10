@@ -8,7 +8,7 @@
     "body-parser": "^1.18.3",
     "docx-templates": "^2.9.1",
     "download-file": "^0.1.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-fileupload": "^1.1.1-alpha.1",
     "file-saver": "^2.0.0",
     "formidable": "^1.2.1",
