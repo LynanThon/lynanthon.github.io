@@ -15,10 +15,10 @@
   "license": "MIT",
   "dependencies": {
     "archiver": "^3.0.0",
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "docx": "^4.6.0",
     "docx-templates": "^2.9.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "express-handlebars": "^3.0.0",
     "express-zip": "^2.0.1",
     "formidable": "^1.2.1",
